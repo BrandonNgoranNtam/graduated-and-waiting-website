@@ -12,8 +12,8 @@ const useGraduationDate = () => {
       try {
         const response = await graduationService.get('/graduation');
         setGraduationDate(response.data);
-      } catch (err) {
-        setError(err.message);
+      } catch (err : any) {
+        setError(err);
       } finally {
         setLoading(false);
       }
