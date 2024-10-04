@@ -18,46 +18,51 @@ const data = [
         logo: '../../public/assets/constructor_io_logo.jfif',
         website: 'https://constructor.io',
         job: 'Javascript Engineer',
-        processTime: '3 weeks',
-        rejectionReason: 'Not a perfect match for the role',
+        processTime: '18 days',
+        rejectionReason: 'Rejected after the code pairing session - No feedback given',
+        painRating: 100,
     },
     {
         name: 'The Athletic',
         logo: '../../public/assets/the_athletic_media_company_logo.jfif',
         website: 'https://theathletic.com',
         job: 'Associate Software Engineer',
-        processTime: '2 weeks',
-        rejectionReason: 'Candidate pool was highly competitive',
-    },
-    {
-        name: 'SignOnSite',
-        logo: '../../public/assets/signonsite_logo.jfif',
-        website: 'https://signonsite.com.au',
-        job: 'Junior Software Engineer',
-        processTime: '1 month',
-        rejectionReason: 'Lacked specific experience in certain areas',
+        processTime: '1 month and 1/2',
+        rejectionReason: 'Prefered the other finalist',
+        painRating: 9,
     },
     {
         name: 'CloudTalk',
         logo: '../../public/assets/cloudtalkio_logo.jfif',
         website: 'https://cloudtalk.io',
         job: 'NodeJS Engineer',
-        processTime: '1 week',
-        rejectionReason: 'Position was filled internally',
+        processTime: '3 weeks',
+        rejectionReason: 'Ghosted after multiple followups',
+        painRating: 8,
     },
     {
         name: 'saas.group',
         logo: '../../public/assets/saas_group_logo.jfif',
         website: 'https://saas.group',
         job: 'Junior Full-Stack Developer',
-        processTime: '4 weeks',
-        rejectionReason: 'Technical interview did not meet expectations',
+        processTime: '3 weeks',
+        rejectionReason: 'Ghosted after multiple followups - Rejected for lack of expericence',
+        painRating: 8,
+    },
+    {
+        name: 'SignOnSite',
+        logo: '../../public/assets/signonsite_logo.jfif',
+        website: 'https://signonsite.com.au',
+        job: 'Junior Software Engineer',
+        processTime: '3 months',
+        rejectionReason: 'After phone screening, the recruiter decided that other candidates were more qualified',
+        painRating: 7,
     },
 ];
 
 const PainfulRejections = () => {
     return (
-        <Card className="col-span-3">
+        <Card className="sm:col-span-1 lg:col-span-1 xl:col-span-2">
             <CardHeader>
                 <CardTitle>Wall Of Pain</CardTitle>
                 <CardDescription>
@@ -89,7 +94,8 @@ const PainfulRejections = () => {
                                 </HoverCard>
                             </a>
                             <div className="ml-auto font-medium">
-                                <Badge variant="destructive">PAIN</Badge>
+                                <Badge variant="destructive">PAIN - {item.painRating}/10</Badge>
+
                             </div>
                         </div>
                     ))}
@@ -100,4 +106,5 @@ const PainfulRejections = () => {
 }
 
 export default PainfulRejections;
+
 

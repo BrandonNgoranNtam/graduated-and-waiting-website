@@ -4,7 +4,9 @@ import useGraduationDate from '@/hooks/useGraduationDate';
 
 
 const Hero = () => {
-    const { graduationDate, loading, error } = useGraduationDate();
+    //const { graduationDate, loading, error } = useGraduationDate(); //Still need to deploy the backend service
+
+    const  graduationDate  = '2023-09-08';
 
     return (
         <>
@@ -16,12 +18,12 @@ const Hero = () => {
                             Days Since My Graduation Without A Job
                         </h1>
                         <p className="mt-3 text-xl text-muted-foreground">
-                            Tracking every second, application, and rejection until that dream offer arrives.
+                            Tracking every second, application, and rejection until a company gives me a chance.
                         </p>
                     </div>
                     <div className="mt-10 relative max-w-5xl mx-auto">
-                        {loading && <p>Loading...</p>}
-                        {error && <p>Error: {error}</p>}
+                        {/*{loading && <p>Loading...</p>}
+                        {error && <p>Error: {error}</p>}*/}
                         {graduationDate && (
                             <div className="flex items-center justify-center">
                                 <FlipClock graduationDate={graduationDate} />
@@ -31,7 +33,6 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            {/* End Hero */}
         </>
     )
 }

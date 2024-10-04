@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { TrendingUp } from "lucide-react"
 import { Bar, BarChart, CartesianGrid, XAxis } from "recharts"
 import { Button } from "@/components/ui/button"
@@ -61,7 +61,13 @@ const chartConfig = {
 export function HopeChart() {
   // State to keep track of the chart data
   const [chartData, setChartData] = useState(initialChartData)
-  const [totalHope, setTotalHope] = useState(4)
+  const [totalHope, setTotalHope] = useState(
+    Number(localStorage.getItem("totalHope")) || 4
+  )
+
+  useEffect(() => {
+    localStorage.setItem("totalHope", String(totalHope))
+  }, [totalHope])
 
   // Function to handle button clicks and increase hope
   const handleGiveHope = () => {
@@ -112,5 +118,4 @@ export function HopeChart() {
     </Card>
   )
 }
-
 

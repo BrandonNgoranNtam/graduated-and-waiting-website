@@ -6,7 +6,8 @@ import { cn } from "@/lib/utils";
 // Define mood labels or emojis based on the progress value
 const getMoodLabel = (value: number) => {
   if (value <= 20) return "Absolutely Devastated 😭";
-  if (value <= 40) return "A Bit Down 😞";
+  if (value <= 30) return "Losing Hope 😞";
+  if (value <= 40) return "A Bit Down 😕";
   if (value <= 60) return "Neutral 😐";
   if (value <= 80) return "Hopeful 😊";
   return "Feeling Great 😄";
@@ -35,7 +36,7 @@ export { Progress };
 
 // Mood Tracker Component
 const MoodTracker = () => {
-  const moodValue = 30; // Change this value manually to update the progress bar
+  const moodValue = 25; 
 
   return (
     <div className="mood-tracker p-4">

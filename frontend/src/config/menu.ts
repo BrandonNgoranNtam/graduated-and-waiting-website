@@ -19,22 +19,22 @@ export const mainMenu: NavItemWithChildren[] = [
         title: 'Dashboard',
         to: '',
     },
+    // {
+    //     title: 'Dropdown',
+    //     items: [
+    //         {
+    //             title: 'Sample',
+    //             to: '/sample',
+    //         },
+    //         {
+    //             title: 'Sample Dua',
+    //             to: '/#',
+    //         },
+    //     ]
+    // },
     {
-        title: 'Dropdown',
-        items: [
-            {
-                title: 'Sample',
-                to: '/sample',
-            },
-            {
-                title: 'Sample Dua',
-                to: '/#',
-            },
-        ]
-    },
-    {
-        title: 'Empty',
-        to: 'empty',
+        title: 'My Portfolio',
+        to: 'https://brandonngoranntam-portfolio.vercel.app/',
     },
 ]
 

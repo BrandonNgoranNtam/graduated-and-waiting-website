@@ -20,7 +20,7 @@ export default function Dashboard() {
                 <PageHeaderHeading></PageHeaderHeading>
             </PageHeader> */}
             <Hero />
-        
+
             <MoodTracker />
             <CardsStats />
 
@@ -28,7 +28,7 @@ export default function Dashboard() {
                 <HopeChart />
                 <PainfulRejections />
             </div>
-            <EmotionalRollercoaster />
+            {/* <EmotionalRollercoaster /> */}
 
         </>
     )

@@ -57,36 +57,36 @@ export function CardsStats() {
                 <CardContent>
                     <div className="text-2xl font-bold">524</div>
                     <p className="text-xs text-muted-foreground">
-                        Probably more than the number of times I've brushed my hair this year.
+                        They said finding a job in this field was easy...
                     </p>
                 </CardContent>
             </Card>
             <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                    <CardTitle className="text-base font-normal">Rejections</CardTitle>
+                    <CardTitle className="text-base font-normal">Success Rate</CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <div className="text-2xl font-bold">524</div>
+                    <div className="text-2xl font-bold">0%</div>
                     <p className="text-xs text-muted-foreground">
-                        Slightly more than the number of times I've looked at myself in the mirror and thought "I'm a failure".
+                        Otherwise I would have shut down this website
                     </p>
                 </CardContent>
             </Card>
             <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                    <CardTitle className="text-base font-normal">Times Refreshed Email</CardTitle>
+                    <CardTitle className="text-base font-normal">Times I Have Refreshed My Inbox</CardTitle>
                     <p className="text-xs text-muted-foreground">Today</p>
                 </CardHeader>
                 <CardContent>
-                    <div className="text-2xl font-bold">25</div>
+                    <div className="text-2xl font-bold">54</div>
                     <p className="text-xs text-muted-foreground">
-                        More than the number of times I've checked my phone for a text from a recruiter.
+                        Getting an email is a huge deal
                     </p>
                 </CardContent>
             </Card>
             <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                    <CardTitle className="text-base font-normal">Interviews Scheduled</CardTitle>
+                    <CardTitle className="text-base font-normal">Interviews Had</CardTitle>
                     <p className="text-xs text-muted-foreground"></p>
                 </CardHeader>
                 <CardContent>
