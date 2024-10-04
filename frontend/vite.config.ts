@@ -2,7 +2,7 @@ import path from "path"
 import react from "@vitejs/plugin-react"
 import { defineConfig } from "vite"
 
-const basenameProd = '/graduated-and-waiting-website'
+const basenameProd = '/graduated-and-waiting'
 
 export default defineConfig(({ command }) => {
   const isProd = command === 'build'
