@@ -48,6 +48,7 @@ const FlipUnitContainer = ({ digit, shuffle, unit }) => {
       <StaticCard position={'lowerCard'} digit={previousDigit} />
       <AnimatedCard digit={digit1} animation={animation1} />
       <AnimatedCard digit={digit2} animation={animation2} />
+
     </div>
   );
 };
@@ -120,15 +121,30 @@ class FlipClock extends React.Component {
     } = this.state;
 
     return (
-      <div className={'flipClock'}>
-        
-        <FlipUnitContainer unit={'days'} digit={days} shuffle={daysShuffle} />
-        <FlipUnitContainer unit={'hours'} digit={hours} shuffle={hoursShuffle} />
-        <FlipUnitContainer unit={'minutes'} digit={minutes} shuffle={minutesShuffle} />
-        <FlipUnitContainer unit={'seconds'} digit={seconds} shuffle={secondsShuffle} />
+      <div className="flex flex-row justify-center gap-4">
+
+        <div className="text-center font-bold p-4">
+          <div className="mb-2">Days</div>
+          <FlipUnitContainer unit="days" digit={days} shuffle={daysShuffle} />
+        </div>
+        <div className="text-center font-bold p-4">
+          <div className="mb-2">Hours</div>
+          <FlipUnitContainer unit="hours" digit={hours} shuffle={hoursShuffle} />
+        </div>
+        <div className="text-center font-bold p-4">
+          <div className="mb-2">Minutes</div>
+          <FlipUnitContainer unit="minutes" digit={minutes} shuffle={minutesShuffle} />
+        </div>
+        <div className="text-center font-bold p-4">
+          <div className="mb-2">Seconds</div>
+          <FlipUnitContainer unit="seconds" digit={seconds} shuffle={secondsShuffle} />
+        </div>
+
       </div>
     );
   }
-}
+
+};
 
 export default FlipClock;
+

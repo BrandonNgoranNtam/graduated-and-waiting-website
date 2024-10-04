@@ -57,7 +57,7 @@ export function CardsStats() {
                 <CardContent>
                     <div className="text-2xl font-bold">524</div>
                     <p className="text-xs text-muted-foreground">
-                        +20.1% from last month
+                        Probably more than the number of times I've brushed my hair this year.
                     </p>
                 </CardContent>
             </Card>
@@ -68,7 +68,7 @@ export function CardsStats() {
                 <CardContent>
                     <div className="text-2xl font-bold">524</div>
                     <p className="text-xs text-muted-foreground">
-                        +180.1% from last month
+                        Slightly more than the number of times I've looked at myself in the mirror and thought "I'm a failure".
                     </p>
                 </CardContent>
             </Card>
@@ -80,7 +80,7 @@ export function CardsStats() {
                 <CardContent>
                     <div className="text-2xl font-bold">25</div>
                     <p className="text-xs text-muted-foreground">
-                        +20.1% from last month
+                        More than the number of times I've checked my phone for a text from a recruiter.
                     </p>
                 </CardContent>
             </Card>
@@ -92,10 +92,11 @@ export function CardsStats() {
                 <CardContent>
                     <div className="text-2xl font-bold">8</div>
                     <p className="text-xs text-muted-foreground">
-                        from 4 different companies
+                    from 4 different companies
                     </p>
                 </CardContent>
             </Card>
         </div>
     )
 }
+

@@ -1,30 +1,35 @@
 import { PageHeader, PageHeaderHeading } from "@/components/page-header";
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import FlipClock from "@/components/flipclock/FlipClock";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import useGraduationDate from '@/hooks/useGraduationDate';
-import { CardsStats } from "@/components/layouts/Stats";
+import { CardsStats } from "@/components/Stats";
+import PainfulRejections from "@/components/PainfulRejections";
+import MoodTracker from "@/components/MoodTracker";
+import { HopeChart } from "@/components/HopeChart";
+import { EmotionalRollercoaster } from "@/components/EmotionalRollercoaster";
+import Hero from "@/components/Hero";
 
 
 export default function Dashboard() {
 
-    const { graduationDate, loading, error } = useGraduationDate();
 
 
     return (
         <>
-            <PageHeader>
-                <PageHeaderHeading>Graduated And Still Waiting</PageHeaderHeading>
-            </PageHeader>
 
-            {loading && <p>Loading...</p>}
-            {error && <p>Error: {error}</p>}
-            {graduationDate && (
-                <div className="flex items-center justify-center">
-                    <FlipClock graduationDate={graduationDate} />
-                </div>
-            )}
-
+            {/* <PageHeader>
+                <PageHeaderHeading></PageHeaderHeading>
+            </PageHeader> */}
+            <Hero />
+        
+            <MoodTracker />
             <CardsStats />
+
+            <div className=" pt-2 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+                <HopeChart />
+                <PainfulRejections />
+            </div>
+            <EmotionalRollercoaster />
+
         </>
     )
 }
