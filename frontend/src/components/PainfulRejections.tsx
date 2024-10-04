@@ -15,7 +15,7 @@ import { Badge } from './ui/badge';
 const data = [
     {
         name: 'Constructor.io',
-        logo: '../../public/assets/constructor_io_logo.jfif',
+        logo: 'https://media.licdn.com/dms/image/v2/D4E0BAQFAqrIMIFeYKA/company-logo_200_200/company-logo_200_200/0/1718379588135/constructor_io_logo?e=1736380800&v=beta&t=pFX_plVOMJsUr4-_q1MqkB7hejXbhcL4iq88tDD8ugU',
         website: 'https://constructor.io',
         job: 'Javascript Engineer',
         processTime: '18 days',
@@ -24,7 +24,7 @@ const data = [
     },
     {
         name: 'The Athletic',
-        logo: '../../public/assets/the_athletic_media_company_logo.jfif',
+        logo: 'https://media.licdn.com/dms/image/v2/C560BAQH7W7Upn6yn3A/company-logo_200_200/company-logo_200_200/0/1630650484669/the_athletic_media_company_logo?e=1736380800&v=beta&t=HJ2vfeAFHEGKTEkoukpP1Lj_bAK25Ok4ss98LEVguZU',
         website: 'https://theathletic.com',
         job: 'Associate Software Engineer',
         processTime: '1 month and 1/2',
@@ -33,7 +33,7 @@ const data = [
     },
     {
         name: 'CloudTalk',
-        logo: '../../public/assets/cloudtalkio_logo.jfif',
+        logo: 'https://media.licdn.com/dms/image/v2/D4D0BAQF7Z4E3ekuCTg/company-logo_200_200/company-logo_200_200/0/1681379337435/cloudtalkio_logo?e=1736380800&v=beta&t=fGbyx48wO9iCc3iMNjMoXX8pLIawWxJFtlKcxP3eXHQ',
         website: 'https://cloudtalk.io',
         job: 'NodeJS Engineer',
         processTime: '3 weeks',
@@ -42,7 +42,7 @@ const data = [
     },
     {
         name: 'saas.group',
-        logo: '../../public/assets/saas_group_logo.jfif',
+        logo: 'https://media.licdn.com/dms/image/v2/C4E0BAQE5W79bOfHl7Q/company-logo_200_200/company-logo_200_200/0/1636062410006/saas_group_logo?e=1736380800&v=beta&t=7HSC9x9oOzthqQU0767WGGNjtmQmCzKqQ8lVU8B5V0I',
         website: 'https://saas.group',
         job: 'Junior Full-Stack Developer',
         processTime: '3 weeks',
@@ -51,7 +51,7 @@ const data = [
     },
     {
         name: 'SignOnSite',
-        logo: '../../public/assets/signonsite_logo.jfif',
+        logo: 'https://media.licdn.com/dms/image/v2/D560BAQFyLo8N98NCqQ/company-logo_200_200/company-logo_200_200/0/1710706051623/signonsite_logo?e=1736380800&v=beta&t=2HllwDczccS9RuRBTEK6ekXFVLtfieHKBOplCQGPiMY',
         website: 'https://signonsite.com.au',
         job: 'Junior Software Engineer',
         processTime: '3 months',

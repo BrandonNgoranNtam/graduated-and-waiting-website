@@ -26,7 +26,7 @@ export default function Dashboard() {
 
             <div className=" pt-2 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
                 <HopeChart />
-                {/* <PainfulRejections /> */}
+                <PainfulRejections />
             </div>
             {/* <EmotionalRollercoaster /> */}
 
