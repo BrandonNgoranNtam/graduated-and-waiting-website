@@ -1,7 +1,8 @@
 {
-  "name": "react-shadcn-starter",
+  "name": "graduated-and-waiting-website",
   "private": true,
   "version": "0.1",
+  "homepage":"graduated-and-waiting.vercel.app" ,
   "type": "module",
   "scripts": {
     "dev": "vite",
